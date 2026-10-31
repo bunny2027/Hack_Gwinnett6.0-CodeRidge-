@@ -1,0 +1,96 @@
+/* ---------- Home page ---------- */
+
+.hero {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 80px 24px 56px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  text-align: center;
+
+  & h1 {
+    font-size: 52px;
+    @media (max-width: 700px) {
+      font-size: 34px;
+    }
+  }
+  & h1 span {
+    color: var(--accent);
+  }
+
+  @media (max-width: 700px) {
+    padding: 48px 20px 40px;
+  }
+}
+
+.hero_eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.hero_subtitle {
+  max-width: 560px;
+  font-size: 19px;
+}
+
+.hero_actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.home_section {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  scroll-margin-top: 64px; /* keep #about from hiding under the sticky nav bar */
+
+  & > h2 {
+    margin-bottom: 12px;
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & p {
+    font-size: 15px;
+  }
+  & .btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+.feature_icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+}
